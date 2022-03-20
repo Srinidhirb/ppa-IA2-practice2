@@ -1,4 +1,5 @@
 #include<stdio.h>
+
 int input_side()
 {
   int n;
@@ -6,6 +7,7 @@ int input_side()
   scanf("%d",&n);
   return n;
 }
+
  int check_scalene(int a, int b, int c)
  {
     if (a==b || b==c || c==a)

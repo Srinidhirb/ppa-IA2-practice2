@@ -27,6 +27,7 @@ else if (composite==-1)
 printf("the no is not composite");
 }
 int main()
+
 {
   int a,b;
   a=input_numbers();
