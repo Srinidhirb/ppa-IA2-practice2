@@ -20,7 +20,7 @@ int gcd(int a, int b)
   if( b%a==0)
     return a;
 
-  for(i=0;i<a/2;i++)
+  for(i=1;i<=a/2;i++)
   {
     if ( a%i == 0 && b%i == 0)
       gcd = i;

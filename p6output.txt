@@ -1,1 +1,52 @@
 
+Breakpoint 1, main () at p6original.c:41
+41  {
+(gdb) n
+43    input_string(str);
+(gdb) s
+input_string (a=0x7ffdbf968540 "\aW\224j\016\177") at p6original.c:5
+5     printf("Enter the string:\n");
+(gdb) n
+Enter the string:
+6     scanf("%s", a);
+(gdb) n
+heloo
+7   }
+(gdb) n
+main () at p6original.c:45
+45    string_copy(rev_str,str);
+(gdb) s
+string_copy (d=0x7ffdbf9685b0 "", s=0x7ffdbf968540 "heloo") at p6original.c:17
+17    for(int i=0;s[i]!='\0';i++)
+(gdb) n
+18      d[i]=s[i];
+(gdb) n
+17    for(int i=0;s[i]!='\0';i++)
+(gdb) n
+18      d[i]=s[i];
+(gdb) n
+17    for(int i=0;s[i]!='\0';i++)
+(gdb) n
+18      d[i]=s[i];
+(gdb) n
+17    for(int i=0;s[i]!='\0';i++)
+(gdb) n
+18      d[i]=s[i];
+(gdb) n
+17    for(int i=0;s[i]!='\0';i++)
+(gdb) n
+18      d[i]=s[i];
+(gdb) n
+17    for(int i=0;s[i]!='\0';i++)
+(gdb) n
+19  }
+(gdb) n
+main () at p6original.c:46
+46    str_reverse(rev_str);
+(gdb) n
+47    output(str, rev_str);
+(gdb) n
+The reverse of heloo is ooleh
+48    return 0;
+(gdb) n
+49  }

@@ -1,1 +1,28 @@
-
+Breakpoint 1, main () at p2original.c:37
+37      a=input_side();
+(gdb) n
+enter the length of the side:
+2
+38      b=input_side();
+(gdb) n
+enter the length of the side:
+4
+39      c=input_side();
+(gdb) n
+enter the length of the side:
+5
+40      s=check_scalene(a,b,c);
+(gdb) s
+check_scalene (a=2, b=4, c=5) at p2original.c:13
+13      if (a==b || b==c || c==a)
+(gdb) n
+18      return 1  ;
+(gdb) n
+21   }
+(gdb) n
+main () at p2original.c:41
+41      output(a,b,c,s);
+(gdb) n
+42      return 0;
+(gdb) n
+43    }

@@ -1,1 +1,35 @@
-
+Breakpoint 1, main () at p3original.c:33
+33    a=input_numbers();
+(gdb) s
+input_numbers () at p3original.c:3
+3   {
+(gdb) n
+5     printf("enter the number :");
+(gdb) n
+6     scanf("%d",&n);
+(gdb) n
+enter the number :4
+7     return n;
+(gdb) n
+8   }
+(gdb) n
+main () at p3original.c:34
+34    b=is_composite(a);
+(gdb) s
+is_composite (n=4) at p3original.c:11
+11    int a=0, i;
+(gdb) n
+12    for(i=2;i/2;i++)
+(gdb) n
+13    if (n%i==0)
+(gdb) n
+15      return 1;
+(gdb) n
+21  }
+(gdb) n
+main () at p3original.c:35
+35    output(a,b);
+(gdb) n
+36    return 0;
+(gdb) n
+37  }(gdb) 
